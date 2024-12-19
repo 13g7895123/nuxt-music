@@ -275,7 +275,7 @@
   // 播放列表管理
   const addToPlaylist = async () => {
     // 支援完整 YouTube 連結和影片 ID
-    const match = newVideoInput.value.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
+    const match = newVideoInput.value.match(/(?:https?:\/\/) ? (?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|\S*?[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
     const videoId = match ? match[1] : newVideoInput.value
   
     // 獲取影片標題
